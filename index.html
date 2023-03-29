@@ -5,29 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carlos Madrigal - Perfil Profesional</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+    
 </head>
 <body>
-    <header id="header">
+    <header id="header" class="sticky-top">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">CM</a>
+              <a class="navbar-brand" href="index.html">CM</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#"></i>Home</a>
+                    <a class="nav-link" aria-current="page" href="#hero"></i>Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#about">About</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Resume</a>
@@ -43,7 +49,35 @@
             </div>
           </nav>
       </header><!-- End Header -->
+
+      <!-- ======= Hero Section ======= -->
+      <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+        <div class="hero-container" data-aos="fade-in">
+          <h1>Carlos Madrigal</h1>
+          <p><span class="typed" data-typed-items="Web Developer, .Net Developer, Musician"></span></p>
+        </div>
+      </section><!-- End Hero -->
+
+      <main id="main">
+        <!-- ======= About Section ======= -->
+        <section id="about" class="container about">
+          <div class="section-title">
+            <h2>About</h2>
+            <p>
+              Licenciado en Informática de la Universidad de Oriente, núcleo de Sucre, Venezuela, con 2 
+              años de experiencia en el desarrollo web manejando diferentes tecnologías, con la capacidad y el 
+              interés de aportar a un gran equipo y desarrollar productos de alto valor. 
+              Experiencia en el desarrollo bajo requerimientos y estándares establecidos. Además, cuento con 
+              amplia experiencia y trayectoria como músico profesional y en la educación musical
+            </p>
+          </div>
+        </section>
+      </main>
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js" integrity="sha512-hIlMpy2enepx9maXZF1gn0hsvPLerXoLHdb095CmRY5HG3bZfN7XPBZ14g+TUDH1aGgfLyPHmY9/zuU53smuMw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <!-- Template Main JS File -->
+  <script src="/assets/js/main.js"></script>
 </body>
 </html>
