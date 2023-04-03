@@ -116,6 +116,28 @@ header nav button.navbar-toggler{
   border-bottom: 3px solid #149ddd;
 }
 
+#hero .social-links {
+  margin-top: 20px;
+}
+
+#hero .social-links a {
+  font-size: 28px;
+  display: inline-block;
+  color: #fff;
+  line-height: 1;
+  margin-right: 20px;
+  transition: 0.3s;
+  /* background-color: #173b6c; */
+  padding: 15px;
+  border-radius: 50%;
+}
+
+#hero .social-links a:hover {
+  color: #149ddd;
+  transition: 0.5;
+}
+
+
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
