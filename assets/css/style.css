@@ -121,15 +121,15 @@ header nav button.navbar-toggler{
 }
 
 #hero .social-links a {
-  font-size: 28px;
+  font-size: 24px;
   display: inline-block;
   color: #fff;
   line-height: 1;
   margin-right: 20px;
   transition: 0.3s;
   /* background-color: #173b6c; */
-  padding: 15px;
-  border-radius: 50%;
+  /* padding: 15px; */
+  /* border-radius: 50%; */
 }
 
 #hero .social-links a:hover {
@@ -237,3 +237,25 @@ section {
 .about .content p:last-child {
   margin-bottom: 0;
 }
+
+/*--------------------------------------------------------------
+# Skills
+--------------------------------------------------------------*/
+.skill-card{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.skill-card img{
+  width: 10rem;
+  height: 10rem;
+}
+
+.skill-card:hover .card-img {
+  -webkit-transform:scale(1.1);
+  transform:scale(1.1);
+}
+
+/* .skill-card {
+  overflow:hidden;
+} */
