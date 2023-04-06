@@ -125,8 +125,10 @@ header nav button.navbar-toggler{
   display: inline-block;
   color: #fff;
   line-height: 1;
-  margin-right: 20px;
-  transition: 0.3s;
+  margin-right: 15px;
+  transition: 0.5s;
+  padding: 5px;
+  background-color: rbga(0,0,0,0);
   /* background-color: #173b6c; */
   /* padding: 15px; */
   /* border-radius: 50%; */
@@ -135,6 +137,10 @@ header nav button.navbar-toggler{
 #hero .social-links a:hover {
   color: #149ddd;
   transition: 0.5;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 50%;
+  transition: 0.3s
 }
 
 
@@ -254,8 +260,72 @@ section {
 .skill-card:hover .card-img {
   -webkit-transform:scale(1.1);
   transform:scale(1.1);
+  transition: 0.3s;
 }
 
-/* .skill-card {
-  overflow:hidden;
-} */
+
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+.resume .resume-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #050d18;
+}
+
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #1f5297;
+  position: relative;
+}
+
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  font-size: 16px;
+  background: #e4edf9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #1f5297;
+}
+
+.resume-title
+{
+  padding-bottom: 0;
+}
