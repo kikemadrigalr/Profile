@@ -255,6 +255,7 @@ section {
 .skill-card img{
   width: 10rem;
   height: 10rem;
+  transition: 0.3s;
 }
 
 .skill-card:hover .card-img {
@@ -329,3 +330,15 @@ section {
 {
   padding-bottom: 0;
 }
+
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+.portfolio .section-title{
+  padding-bottom: 0;
+}
+
+.portfolio-description{
+  text-align: justify;
+}
+/* .portfolio-card .portfolio-badge{} */
