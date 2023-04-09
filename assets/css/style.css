@@ -250,6 +250,7 @@ section {
 .skill-card{
   padding-top: 10px;
   padding-bottom: 10px;
+  box-shadow: 0 0 8px 0 rgba(20, 157, 221, 1);
 }
 
 .skill-card img{
@@ -338,6 +339,10 @@ section {
   padding-bottom: 0;
 }
 
+.portfolio-card{
+  box-shadow: 0 0 8px 0 rgba(20, 157, 221, 1);
+}
+
 .portfolio-description{
   text-align: justify;
 }
@@ -348,14 +353,14 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact {
-  padding-bottom: 130px;
+  padding-bottom: 50px;
 }
 
-.contact .info {
-  padding: 30px;
-  /* background: #fff; */
+/* .contact .info {
+  padding: 20px;
+  background: #fff;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
-}
+} */
 
 .contact .info i {
   font-size: 20px;
@@ -419,4 +424,12 @@ section {
 .contact .info .phone:hover i {
   background: #149ddd;
   color: #fff;
+}
+
+footer{
+  background-color: #0e2442;
+  color: #fff;
+  height: 50px;
+  padding: 10px;
+  text-align: center;
 }
