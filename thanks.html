@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-theme">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Carlos Madrigal</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-sun"></i>
+    </button>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Carlos<span>Madrigal</span></a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Thank You Section -->
+    <section class="thank-you-section">
+        <div class="container">
+            <div class="thank-you-card">
+                <div class="thank-you-icon">
+                    <i class="fas fa-check"></i>
+                </div>
+                <h1 class="thank-you-title">Thank You!</h1>
+                <p class="thank-you-message">
+                    Your message has been successfully sent. I really appreciate you taking the time to get in touch.
+                    I will respond to your inquiry as soon as possible.
+                </p>
+                <a href="index.html" class="back-btn">Back to Homepage</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <a href="index.html" class="footer-logo">Carlos<span>Madrigal</span></a>
+                <div class="footer-links">
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#skills">Skills</a>
+                    <a href="index.html#experience">Experience</a>
+                    <a href="index.html#projects">Projects</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Carlos Madrigal. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Implementación del cambio de tema (claro/oscuro)
+        const themeToggle = document.getElementById('themeToggle');
+        const htmlElement = document.documentElement;
+        const themeIcon = themeToggle.querySelector('i');
+        
+        // Verificar si hay una preferencia guardada
+        const savedTheme = localStorage.getItem('theme');
+        
+        // Aplicar tema guardado o usar el predeterminado (oscuro)
+        if (savedTheme === 'light') {
+            htmlElement.classList.add('light-theme');
+            htmlElement.classList.remove('dark-theme');
+            themeIcon.classList.remove('fa-sun');
+            themeIcon.classList.add('fa-moon');
+        }
+        
+        // Función para cambiar el tema
+        function toggleTheme() {
+            if (htmlElement.classList.contains('light-theme')) {
+                // Cambiar a tema oscuro
+                htmlElement.classList.remove('light-theme');
+                htmlElement.classList.add('dark-theme');
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                // Cambiar a tema claro
+                htmlElement.classList.add('light-theme');
+                htmlElement.classList.remove('dark-theme');
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+                localStorage.setItem('theme', 'light');
+            }
+        }
+        
+        // Escuchar evento de clic en el botón de tema
+        themeToggle.addEventListener('click', toggleTheme);
+    </script>
+</body>
+</html>
